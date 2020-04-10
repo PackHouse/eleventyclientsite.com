@@ -1,0 +1,20 @@
+{
+  "name": "ABC Company",
+  "phone": "(910) 555-5555",
+  "email": "teste@test.com",
+  "address": "123 somewhere rd",
+  "socials": [
+    {
+      "name": "facebook",
+      "url": "http://facebook.com"
+    },
+    {
+      "name": "twitter",
+      "url": "http://twitter.com"
+    },
+    {
+      "name": "linkedin",
+      "url": "http://linkin.com"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="spt">
+  <div class="testimonial-area spb">
+    <div class="container">
+      <div class="section-title">
+        <h2>Clients Review</h2>
+        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+      </div>
+      <div class="testimonial-slider bordered">
+        {% for testimonial in collections.testimonials%}
+          <div class="single-slide">
+            <div class="inner">
+              <p>{{ testimonial.data.qoute }}</p>
+              <div class="client-info">
+                <div class="client-img">
+                  <img src="{{ testimonial.data.avatorImg }}" alt="client">
+                </div>
+                <div class="client-data">
+                  <h4>{{ testimonial.data.name}}</h4>
+                  <span>{{ testimonial.data.jobTitle }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
