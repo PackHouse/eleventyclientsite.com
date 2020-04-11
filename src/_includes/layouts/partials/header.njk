@@ -1,0 +1,36 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3 logo-column">
+        <a href="/" class="logo">
+          <img src="/assets/img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="col-6 col-sm-9 nav-column clearfix">
+        <div class="right-nav">
+          <div class="header-social">
+            {% for social in settings.socials %}
+              <a href="{{ social.url }}" class="fa fa-{{ social.name }}"></a>
+            {% endfor %}
+          </div>
+        </div>
+        <nav id="menu" class="d-none d-lg-block">
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

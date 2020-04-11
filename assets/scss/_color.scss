@@ -1,0 +1,31 @@
+@function theme-color($key: "primary", $variant: "base") {
+  $map: map-get($theme-colors, $key);
+  @return map-get($map, $variant);
+}
+
+$c1: #2d3666;
+$c2: theme-color();
+//$c2: #222538;
+$c3: #4698ff;
+$c4: #f4f4f4;
+
+@mixin colors($color, $class) {
+  .#{$class} {
+    color: $color;
+  }
+  .#{$class}-bg {
+    background-color: $color;
+  }
+  .#{$class}-bo {
+    border-color: $color !important;
+  }
+}
+
+@include colors($c1, c1);
+@include colors($c2, c2);
+@include colors($c3, c3);
+
+.trns {
+  -webkit-transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s;
+  transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s;
+}
